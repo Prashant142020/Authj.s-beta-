@@ -13,6 +13,13 @@ pnpm dev
 # or
 bun dev
 
+```
+
+```bash
+
+git reset HEAD~1    
+
+git push -f origin dev
 
 
 ```
