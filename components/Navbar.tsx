@@ -1,12 +1,12 @@
-import { auth } from '@/auth';
 import Link from 'next/link';
 import UserButton from './UserButton';
 import { SignIn } from './auth/sign-in';
+import getSession from '@/lib/getSession';
 
 export default async function NavBar() {
   // TODO: Show the currently logged-in user
 
-  const session = await auth();
+  const session = await getSession();
   const user = session?.user;
 
   return (
